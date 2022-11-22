@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/map-logo.png" type="image/x-icon" />
+    <title>
+      Miss African Pride - A beauty brand aimed at celebrating the African woman
+      of all culture
+    </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/map.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#home" class="logo">
+        <img src="images/map-logo.png" alt="" />
+      </a>
+      <div class="icons">
+        <div
+          id="search-btn"
+          style="visibility: hidden"
+          class="fas fa-search"
+        ></div>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+    <!-- navbar section  -->
+
+    <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="/">back to wild roots</a>
+      <a href="#gallery">photo splash</a>
+      <a href="#goals">Our goals</a>
+      <a href="#registration">registration</a>
+    </nav>
+
+    <!-- navbar section  -->
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="slide active">
+        <div class="content">
+          <img src="images/content-img-1.png" alt="" />
+          <span>queen doris dunu</span>
+          <h3>winner 2021</h3>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/home-img-1.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <img src="images/content-img-2.png" alt="" />
+          <span>Queen abisola malik</span>
+          <h3>first runner up 2021</h3>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/home-img-2.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <img src="images/content-img-3.png" alt="" />
+          <span>queen chinaza precious</span>
+          <h3>second Runner-Up 2021</h3>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/home-img-3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <img src="images/content-img-4.png" alt="" />
+          <span>queen peace ekunke</span>
+          <h3>third Runner-Up 2021</h3>
+          <div class="controls">
+            <div class="fas fa-angle-left" onclick="prev()"></div>
+            <div class="fas fa-angle-right" onclick="next()"></div>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/home-img-4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- category section starts  -->
+
+    <div class="countdown">
+      <h1 style="display: inline">
+        REGISTRATION ENDS :
+        <script>
+          CountDownTimer('03/30/2022 10:1 AM', 'countdown')
+
+          function CountDownTimer(dt, id) {
+            var end = new Date(dt)
+
+            var _second = 1000
+            var _minute = _second * 60
+            var _hour = _minute * 60
+            var _day = _hour * 24
+            var timer
+
+            function showRemaining() {
+              var now = new Date()
+              var distance = end.getTime() - now.getTime()
+              if (distance < 0) {
+                clearInterval(timer)
+                document.getElementById(id).innerHTML = 'REGISTRATION HAS ENDED'
+
+                return
+              }
+              var days = Math.floor(distance / _day)
+              var hours = Math.floor((distance % _day) / _hour)
+              var minutes = Math.floor((distance % _hour) / _minute)
+              var seconds = Math.floor((distance % _minute) / _second)
+
+              document.getElementById(id).innerHTML = days + 'days '
+              document.getElementById(id).innerHTML += hours + 'hrs '
+              document.getElementById(id).innerHTML += minutes + 'mins '
+              document.getElementById(id).innerHTML += seconds + 'secs'
+            }
+
+            timer = setInterval(showRemaining, 1000)
+          }
+        </script>
+        <div id="countdown"></div>
+      </h1>
+    </div>
+    <div class="heading">
+      <h1>our sponsors</h1>
+    </div>
+
+    <section class="category">
+      <a href="#" class="box">
+        <img src="images/TRIBON.jpg" alt="" />
+      </a>
+
+      <a href="#" class="box">
+        <img src="images/ZenithBank.png" alt="" />
+      </a>
+      <a href="#" class="box">
+        <img src="images/wildroots.png" alt="" />
+      </a>
+      <a href="#" class="box">
+        <img src="images/Flutterwave.png" alt="" />
+      </a>
+    </section>
+
+    <!-- category section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="content">
+        <h3>About MAP</h3>
+        <p>
+          MISS AFRICAN PRIDE pageant is a beauty brand aimed at celebrating
+          African women of all culture and background and empowering them to
+          realize their goals by creating opportunities for success. <br />
+          We are aimed at positively influencing the personal and professional
+          life of every african woman.
+        </p>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <h1>photo splash</h1>
+        <p>Some amazing memories from MAP 2021</p>
+      </div>
+
+      <div class="lightbox">
+        <a href="/images/img-1.jpg"><img src="/images/img-1.jpg" alt="" /></a>
+        <a href="/images/img-2.jpg"><img src="/images/img-2.jpg" alt="" /></a>
+        <a href="/images/img-3.jpg"><img src="/images/img-3.jpg" alt="" /></a>
+        <a href="/images/img-4.jpg"><img src="/images/img-4.jpg" alt="" /></a>
+        <a href="/images/img-5.jpg"><img src="/images/img-5.jpg" alt="" /></a>
+        <a href="/images/img-6.jpg"><img src="/images/img-6.jpg" alt="" /></a>
+        <a href="/images/img-7.jpg"><img src="/images/img-7.jpg" alt="" /></a>
+        <a href="/images/img-8.jpg"><img src="/images/img-8.jpg" alt="" /></a>
+        <a href="/images/img-9.jpg"><img src="/images/img-9.jpg" alt="" /></a>
+        <a href="/images/img-10.JPG"><img src="/images/img-10.JPG" alt="" /></a>
+        <a href="/images/img-11.JPG"><img src="/images/img-11.JPG" alt="" /></a>
+        <a href="/images/img-12.JPG"><img src="/images/img-12.JPG" alt="" /></a>
+        <a href="/images/img-13.jpg"><img src="/images/img-13.jpg" alt="" /></a>
+        <a href="/images/img-14.jpg"><img src="/images/img-14.jpg" alt="" /></a>
+        <a href="/images/img-15.jpg"><img src="/images/img-15.jpg" alt="" /></a>
+        <a href="/images/img-16.jpg"><img src="/images/img-16.jpg" alt="" /></a>
+        <a href="/images/img-17.jpg"><img src="/images/img-17.jpg" alt="" /></a>
+        <a href="/images/img-18.jpg"><img src="/images/img-18.jpg" alt="" /></a>
+      </div>
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- service section starts  -->
+
+    <div class="heading">
+      <h1>Goals For 2022</h1>
+
+      <p>Empowering the african woman</p>
+    </div>
+    <section id="goals" class="service">
+      <div class="box">
+        <img src="images/ethereum.png" alt="" />
+
+        <h3>cryptocurrency</h3>
+        <p>we will enlighten young ladies on the future of cryptocurrencies</p>
+      </div>
+
+      <div class="box">
+        <img src="images/forex.png" alt="" />
+        <h3>forex tutorials</h3>
+        <p>
+          We are empowering all our contestants + 100 young ladies on forex
+          tutorials from beginner to advanced levels
+        </p>
+      </div>
+
+      <div class="box">
+        <img src="images/nft.png" alt="" />
+        <h3>NFT's</h3>
+        <p>Miss African Pride to mint it's own NFTs</p>
+      </div>
+    </section>
+
+    <!-- service section ends -->
+
+    <!-- registration -->
+
+    <section id="registration">
+      <div class="heading">
+        <h1>REGISTRATION 2022</h1>
+        <div class="registration-img">
+          <img src="images/threeCrownsThreeWinners.png" alt="" />
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card text-center">
+                <div class="title">
+                  <i class="fa fa-trophy" aria-hidden="true"></i>
+                  <h2>Star Prize</h2>
+                </div>
+                <div class="price">
+                  <h4>3 Million Naira</h4>
+                  <p>or Ethereum Equivalent</p>
+                </div>
+                <div class="option">
+                  <ul>
+                    <li>
+                      <i class="fa fa-plane" aria-hidden="true"></i> A trip to
+                      Dubai
+                    </li>
+                    <li>
+                      <i class="fa fa-gift" aria-hidden="true"></i> Funded Forex
+                      Trading Account
+                    </li>
+                    <li>
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>
+                      Represent Nigeria in an International Pageant
+                    </li>
+                    <li>
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>A
+                      Year Modelling Contract With Top Brands
+                    </li>
+                    <li>
+                      <i class="fa fa-check-circle" aria-hidden="true"></i>A
+                      Year Beauty Care Products Supply or Cash Equivalent.
+                    </li>
+                    <li>
+                      <i class="fa fa-certificate" aria-hidden="true"></i>
+                      Certification
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- END Col one -->
+            <div class="col-sm-4">
+              <div class="card text-center">
+                <div class="title">
+                  <i class="fa fa-money-bill" aria-hidden="true"></i>
+                  <h2>First Runner-Up</h2>
+                </div>
+                <div class="price">
+                  <h4>2 Million Naira</h4>
+
+                  <p>or Ethereum Equivalent</p>
+                </div>
+                <div class="option">
+                  <ul>
+                    <li>
+                      <i class="fa fa-gift" aria-hidden="true"></i> Funded Forex
+                      Trading Account
+                    </li>
+                    <li>
+                      <i class="fa fa-certificate" aria-hidden="true"></i>
+                      Certification
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- END Col two -->
+            <div class="col-sm-4">
+              <div class="card text-center">
+                <div class="title">
+                  <i class="fa fa-handshake" aria-hidden="true"></i>
+                  <h2>Second Runner-Up</h2>
+                </div>
+                <div class="price">
+                  <h4>1 Million Naira</h4>
+
+                  <p>or Ethereum Equivalent</p>
+                </div>
+                <div class="option">
+                  <ul>
+                    <li>
+                      <i class="fa fa-gift" aria-hidden="true"></i> Funded Forex
+                      Trading Account
+                    </li>
+                    <li>
+                      <i class="fa fa-certificate" aria-hidden="true"></i>
+                      Certification
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- END Col three -->
+          </div>
+        </div>
+      </div>
+      <!-- prices end -->
+
+      <div class="heading">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+
+      <button class="accordion">is this an online pageant?</button>
+      <div class="panel">
+        <p>Yes, It is.</p>
+      </div>
+
+      <button class="accordion">i am a shy lady, can i contest?</button>
+      <div class="panel">
+        <p>Yes, You Can.</p>
+      </div>
+
+      <button class="accordion">
+        i am below 5.5<sup>ft</sup>, can i contest?
+      </button>
+      <div class="panel">
+        <p>Yes, You Can.</p>
+      </div>
+
+      <button class="accordion">Will There be Voting?</button>
+      <div class="panel">
+        <p>Yes, There will.</p>
+      </div>
+
+      <button class="accordion">How will i be contacted?</button>
+      <div class="panel">
+        <p>contestants will be contacted through Email.</p>
+      </div>
+
+      <button class="accordion">Eligibility</button>
+      <div class="panel">
+        <p>From 17 Years and Above.</p>
+      </div>
+
+      <div class="head-styles two alt-two">
+        <h1 class="reg-heading">
+          Want to Register?
+          <span>
+            <a href="mailto:map@wildroots.tech">
+              click here to Send a <strong>Portrait Studio Photo</strong> of
+              You, Full Name, Age, Location and Occupation</a
+            ></span
+          >
+        </h1>
+      </div>
+      <script>
+        var acc = document.getElementsByClassName('accordion')
+        var i
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener('click', function () {
+            this.classList.toggle('active')
+            var panel = this.nextElementSibling
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + 'px'
+            }
+          })
+        }
+      </script>
+    </section>
+
+    <!-- registration ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a class="link" href="/">
+            <i class="fas fa-angle-right"></i> back to wild roots</a
+          >
+          <a class="link" href="#gallery">
+            <i class="fas fa-angle-right"></i> photo splash</a
+          >
+
+          <a class="link" href="#goals">
+            <i class="fas fa-angle-right"></i> Our goals</a
+          >
+          <a class="link" href="#registration">
+            <i class="fas fa-angle-right"></i> registration</a
+          >
+        </div>
+      </div>
+      <div class="credit">
+        &copy;
+        <script type="text/javascript">
+          document.write(new Date().getFullYear())
+        </script>
+        created by <span>Wild Developers</span> | all rights reserved!
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link      -->
+    <script src="js/script.js"></script>
+
+    <script>
+      lightGallery(document.querySelector('.gallery .lightbox'))
+    </script>
+  </body>
+</html>
